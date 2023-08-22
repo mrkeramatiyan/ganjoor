@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "IRANYekanBold";
+  src: url("../../public/fonts/IRANYekanBold.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANYekanBold";
+  src: url("../../public/fonts/IRANYekanBold.woff2") format("truetype");
+}
+@font-face {
+  font-family: "IRANYekanRegular";
+  src: url("../../public/fonts/IRANYekanRegular.woff") format("truetype");
+}
+@font-face {
+  font-family: "IRANYekanRegular";
+  src: url("../../public/fonts/IRANYekanRegular.woff2") format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +34,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  font-family: "IRANYekanRegular" !important;
 }
